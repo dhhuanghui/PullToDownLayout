@@ -1,2 +1,2 @@
 # PullToDownLayout
-![图片](https://upload-images.jianshu.io/upload_images/2235080-a5d7ad8b38ec224b.gif?imageMogr2/auto-orient/strip)
+![图片](https://github.com/dhhuanghui/PullToDownLayout/blob/master/%E5%9B%BE%E7%89%87.gif)
