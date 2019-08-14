@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dh.pulltodownlayout.view.DayMsgViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tab_group" />
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/main_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_home"
+            app:iconSelected="@mipmap/icon_home_check"
+            app:itemMarginTop="3dp"
+            app:itemText="测试1"
+            app:itemTextSize="13sp"
+            app:openTouchBg="true"
+            app:textColorNormal="#FDB3B3"
+            app:textColorSelected="@color/c_common_red"
+            app:touchDrawable="@drawable/selector_bg" />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_lecture"
+            app:iconSelected="@mipmap/icon_lecture_check"
+            app:itemMarginTop="3dp"
+            app:itemText="测试2"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="#FDB3B3"
+            app:textColorSelected="@color/c_common_red"
+            app:touchDrawable="@drawable/selector_bg"
+            app:unreadThreshold="99" />
+
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_cs"
+            app:iconSelected="@mipmap/icon_cs_check"
+            app:itemMarginTop="3dp"
+            app:itemText="测试3"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="#FDB3B3"
+            app:textColorSelected="@color/c_common_red"
+            app:touchDrawable="@drawable/selector_bg" />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_my"
+            app:iconSelected="@mipmap/icon_my_check"
+            app:itemMarginTop="3dp"
+            app:itemText="测试4"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="#FDB3B3"
+            app:textColorSelected="@color/c_common_red"
+            app:touchDrawable="@drawable/selector_bg" />
+
+    </com.chaychan.library.BottomBarLayout>
+</RelativeLayout>
